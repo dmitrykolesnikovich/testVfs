@@ -1,14 +1,13 @@
 package featurea.mario.android;
 
-import featurea.android.FeatureaActivity;
-import featurea.app.Application;
+import android.app.Activity;
+import android.os.Bundle;
 
-public class MainActivity extends FeatureaActivity {
+public class MainActivity extends Activity {
 
     @Override
-    public void onCreateApplication(Application app) {
-        super.onCreateApplication(app);
-        mario.Main.main(new String[]{});
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
     }
 
 }
